@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}"> 
+	<title>Lolalytics</title>
+</head>
+    <body>
+		<h1>Lolalytics</h1>
+		
+		<h2>- DERNIERE PARTIE -</h2>
+		<br>
+		<br>
+		<div style="width:1250px;height:110px;border:1px solid #000;background-color:#656565;margin-left: 150px;border-radius: 25px;">
+			<br>
+			<p1> {{WIN}} </p1>
+			<p2> Rôle joué : {{Lane}} </p2>
+			<p2> Champion joué : {{Champion}} </p2>
+			<br>
+			<br>
+			<p3> KD : {{KD}} </p3>
+			<br>
+			<br>
+		</div>
+		
+		<h2>- RAJOUTER PARTIE -</h2>
+		<br>
+		<br>
+		<p4> <a href="/ajout"> Rajouter </a> </p4>
+		<br>
+		<br>
+		
+		
+    </body>
+</html>

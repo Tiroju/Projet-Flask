@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}"> 
+	<title>Lolalytics</title>
+</head>
+	<body>
+		<h2>- RAJOUTER PARTIE -</h2>
+		<br>
+		<br>
+			<form action="/" method="POST">
+				<label>Victoire ou Défaite : </label>
+				<input type="text" id="Win" name="Win" required>
+				
+				<label>Rôle : </label>
+				<input type="text" id="Lane" name="Lane" required>
+				
+				<label>Champion : </label>
+				<input type="text" id="Champion" name="Champion" required>
+			
+				<label>Nombre de kills : </label>
+				<input type="text" id="Kills" name="Kills" required>
+				
+				<label>Nombre de morts : </label>
+				<input type="text" id="Deaths" name="Deaths" required>
+			
+				<input type="submit" value="Envoyer">
+			</form>
+		<br>
+		<br>
+	</body>
+</html>
